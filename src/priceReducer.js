@@ -9,7 +9,7 @@ let PriceReducer = (priceValue, action) => // state = price Value
         case "increase":
             return priceValue + 1;
         
-            default:
+        default:
                 return 0;
 
         
