@@ -1,4 +1,4 @@
-import react, { createContext } from "react";
+import { createContext } from "react";
 
 
     let AgeContext = createContext(9); // context created with default value "9"
