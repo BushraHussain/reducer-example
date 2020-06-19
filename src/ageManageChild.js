@@ -11,7 +11,7 @@ let newAge = useContext(AgeContext); // Data in newAge coming from parent , chil
     return (
         <div>
           
-            <h1> In child using Context Api, Age value : {newAge[0]} </h1>
+            <h3> In child using Context Api, Age value : {newAge[0]} </h3>
             <button onClick={()=> {newAge[1](newAge[0]++)} }> Increase Age </button>
             <button onClick={()=> {newAge[1](newAge[0]--)} }> Reduce Age </button>
            

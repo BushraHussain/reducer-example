@@ -10,7 +10,7 @@ let [priceValue, Dispatch] = useReducer (PriceReducer, 0);
 
 return(
     <div>
-        <h1>Price Value using reducer : {priceValue}</h1>
+        <h3>Price Value using reducer : {priceValue}</h3>
 
         <button onClick={()=>Dispatch("reduce")}> Reduce Price </button>
         <button onClick={()=>Dispatch("increase")}> Increase Price </button>
