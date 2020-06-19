@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+
 import './App.css';
+import Price from './price';
+import ParentAgeManage from './ageManageParent';
+import AgeContext from './ageContext';
+
 
 function App() {
+
+
+//let [ageVal, setAgeVal] = useState(80);
+let ageState = useState(80)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <AgeContext.Provider value= {ageState}>
+    <div>
+       <Price />
+       <hr/>
+       <ParentAgeManage age="45"/>
+       
     </div>
+    </AgeContext.Provider>
   );
 }
 
 export default App;
+
+
+
